@@ -82,6 +82,7 @@ function initialiseMenu() {
             });
             element.addClass("active");
             filterPizza(element.attr("href"));
+            $("#pizza-types").html(element.attr("title"));
         });
     });
 }
