@@ -65,6 +65,9 @@ function updateCart() {
 
     //Очищаємо старі піци в кошику
     $cart.html("");
+    if (Cart.length==0) {
+        $cart.html('<h4 id="empty-label">Пусто в холодильнику?<br />Замовте піцу!</h4>');
+    }
     
     $("#cart-list-quantity").html(Cart.length);
 
@@ -76,7 +79,7 @@ function updateCart() {
         return price;
     }
     
-    $("#total").html(totalPrice());
+    $("#total").html(totalPrice() + " грн.");
     
     //Онволення однієї піци
     function showOnePizzaInCart(cart_item) {
