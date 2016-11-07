@@ -3,10 +3,14 @@
  */
 exports.mainPage = function(req, res) {
     res.render('mainPage', {
-        pageTitle: 'Вибір Піци'
+        pageTitle: 'Вибір Піци',
+        moreHeader:''
     });
 };
 
 exports.orderPage = function(req, res) {
-    //TODO: implement
+    res.render('orderPage', {
+        pageTitle: 'Замовлення',
+        moreHeader: '<link rel="stylesheet/less" type="text/css" href="assets/less/no-cart-page.less" />'
+    });
 };
