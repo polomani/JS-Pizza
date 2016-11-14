@@ -3,20 +3,20 @@
 <div class="container">
     <div class="row" id="contacts">
         <h3>1. Контактні дані</h3>
-        <div class="col-sm-6">
-            <div class="row">
-                <div class="col-sm-3"><span>Ім'я</span></div>
-                <div class="col-sm-9"><input class="" type="text" placeholder="Вася Сонях"/></div>
+        <form class="col-sm-6" id="buyform">
+            <div class="row form-group">
+                <label for="name" class="col-sm-3 control-label">Ім'я</label>
+                <div class="col-sm-9"><input class="form-control" name="name" type="text" placeholder="Вася Сонях"/></div>
             </div>
-            <div class="row">
-                <div class="col-sm-3"><span>Телефон</span></div>
-                <div class="col-sm-9"><input class="" type="text" placeholder="+380931234567"/></div>
+            <div class="row form-group">
+                <label for="phone" class="col-sm-3 control-label">Телефон</label>
+                <div class="col-sm-9"><input class="form-control" name="phone" type="text" placeholder="+380931234567"/></div>
             </div>
-            <div class="row">
-                <div class="col-sm-3"><span>Адреса</span></div>
-                <div class="col-sm-9"><input class="" type="text" placeholder="Київ, вул. Спаська , 2"/></div>
+            <div class="row form-group">
+                <label for="address" class="col-sm-3 control-label">Адреса</label>
+                <div class="col-sm-9"><input class="form-control" name="address" type="text" placeholder="Київ, вул. Спаська , 2"/></div>
             </div>
-        </div>
+        </form>
         <div class="col-sm-6" id="callout-container">
             <div class="bs-callout bs-callout-warning">     
                 <h4>Інформація про замовлення</h4>
@@ -25,7 +25,7 @@
                     <b>Адреса доставки:</b> невідома
                 </p>
             </div>
-            <button class="btn btn-sm btn-warning">Далі <i class="glyphicon glyphicon-chevron-right icon-white">
+            <button id="submit" type="submit" class="btn btn-sm btn-warning">Далі <i class="glyphicon glyphicon-chevron-right icon-white">
                                 </i></button>
         </div>
         

@@ -1,3 +1,17 @@
+#clear, .minus, .plus, .remove, .btn-order {
+    display: none;
+}
+
+.btn-edit {
+    width: 250px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.item-quantity:after {
+    content: " піца";
+ }
 
 input {
     width: 100%;
@@ -25,11 +39,30 @@ input {
                 font-weight: bold;
                 vertical-align: middle;
             }
+            .control-label {
+                text-align: right;
+                line-height: 35px;
+            }
         }
         .btn {
             margin-top: 20px;
             margin-bottom: 20px;
             float: right;
+        }
+        .error {
+            color: #880a02;
+            border-color: #880a02;
+            font-weight: normal;
+        }
+        input:focus.error {
+            box-shadow: 0 1px 2px rgba(0,0,0,.075) inset,0 0 5px rgba(136,10,2,.5);
+        }
+        .valid {
+            border-color: #3c763d;
+            color: #3c763d;
+        }
+        input:focus.valid {
+            box-shadow: 0 1px 2px rgba(0,0,0,.075) inset,0 0 5px rgba(60, 118, 61, .5);
         }
     }
     text-align: left;
